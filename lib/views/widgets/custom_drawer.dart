@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/models/drawer_item_model.dart';
 import 'package:responsive_dash_board/utils/app_images.dart';
+import 'package:responsive_dash_board/views/widgets/drawer_item.dart';
+import 'package:responsive_dash_board/views/widgets/drawer_item_list_view.dart';
 import 'package:responsive_dash_board/views/widgets/user_list_tile_info.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -16,6 +19,8 @@ class CustomDrawer extends StatelessWidget {
             title: 'Lekan Okeowo',
             subTitle: 'demo@gmail.com',
           ),
+          SizedBox(height: 8),
+          DrawerItemsListView(),
         ],
       ),
     );
