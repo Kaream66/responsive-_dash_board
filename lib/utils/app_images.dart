@@ -2,78 +2,78 @@
 class Assets {
   Assets._();
 
-  /// Assets for assetsImagesAvatar1
+  /// Assets for imagesAvatar1
   /// assets/images/avatar_1.svg
-  static const String assetsImagesAvatar1 =
+  static const String imagesAvatar1 =
       "assets/images/avatar_1.svg";
 
-  /// Assets for assetsImagesAvatar2
+  /// Assets for imagesAvatar2
   /// assets/images/avatar_2.svg
-  static const String assetsImagesAvatar2 =
+  static const String imagesAvatar2 =
       "assets/images/avatar_2.svg";
 
-  /// Assets for assetsImagesAvatar3
+  /// Assets for imagesAvatar3
   /// assets/images/avatar_3.svg
-  static const String assetsImagesAvatar3 =
+  static const String imagesAvatar3 =
       "assets/images/avatar_3.svg";
 
-  /// Assets for assetsImagesBalance
+  /// Assets for imagesBalance
   /// assets/images/balance.svg
-  static const String assetsImagesBalance =
+  static const String imagesBalance =
       "assets/images/balance.svg";
 
-  /// Assets for assetsImagesCardBackground
+  /// Assets for imagesCardBackground
   /// assets/images/card_background.png
-  static const String assetsImagesCardBackground =
+  static const String imagesCardBackground =
       "assets/images/card_background.png";
 
-  /// Assets for assetsImagesDashboard
+  /// Assets for imagesDashboard
   /// assets/images/dashboard.svg
-  static const String assetsImagesDashboard =
+  static const String imagesDashboard =
       "assets/images/dashboard.svg";
 
-  /// Assets for assetsImagesExpenses
+  /// Assets for imagesExpenses
   /// assets/images/expenses.svg
-  static const String assetsImagesExpenses =
+  static const String imagesExpenses =
       "assets/images/expenses.svg";
 
-  /// Assets for assetsImagesGallery
+  /// Assets for imagesGallery
   /// assets/images/gallery.svg
-  static const String assetsImagesGallery =
+  static const String imagesGallery =
       "assets/images/gallery.svg";
 
-  /// Assets for assetsImagesIncome
+  /// Assets for imagesIncome
   /// assets/images/income.svg
-  static const String assetsImagesIncome =
+  static const String imagesIncome =
       "assets/images/income.svg";
 
-  /// Assets for assetsImagesLogout
+  /// Assets for imagesLogout
   /// assets/images/logout.svg
-  static const String assetsImagesLogout =
+  static const String imagesLogout =
       "assets/images/logout.svg";
 
-  /// Assets for assetsImagesMyInvestments
+  /// Assets for imagesMyInvestments
   /// assets/images/my_investments.svg
-  static const String assetsImagesMyInvestments =
+  static const String imagesMyInvestments =
       "assets/images/my_investments.svg";
 
-  /// Assets for assetsImagesMyTransctions
+  /// Assets for imagesMyTransctions
   /// assets/images/my_transctions.svg
-  static const String assetsImagesMyTransctions =
+  static const String imagesMyTransctions =
       "assets/images/my_transctions.svg";
 
-  /// Assets for assetsImagesSettings
+  /// Assets for imagesSettings
   /// assets/images/settings.svg
-  static const String assetsImagesSettings =
+  static const String imagesSettings =
       "assets/images/settings.svg";
 
-  /// Assets for assetsImagesStatistics
+  /// Assets for imagesStatistics
   /// assets/images/statistics.svg
-  static const String assetsImagesStatistics =
+  static const String imagesStatistics =
       "assets/images/statistics.svg";
 
-  /// Assets for assetsImagesWalletAccount
+  /// Assets for imagesWalletAccount
   /// assets/images/wallet_account.svg
-  static const String assetsImagesWalletAccount =
+  static const String imagesWalletAccount =
       "assets/images/wallet_account.svg";
 }
