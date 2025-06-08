@@ -11,6 +11,9 @@ class ResponsiveDashBoard
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: DashboardView());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: DashboardView(),
+    );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/views/widgets/custom_drawer.dart';
 
 class DashboardDesktopLayout
     extends StatelessWidget {
@@ -6,6 +7,8 @@ class DashboardDesktopLayout
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return Row(
+      children: [Expanded(child: CustomDrawer())],
+    );
   }
 }
