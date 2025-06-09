@@ -7,7 +7,9 @@ class DrawerItem extends StatelessWidget {
   const DrawerItem({
     super.key,
     required this.drawerItemModel,
+    required this.isActive,
   });
+  final bool isActive;
   final DrawerItemModel drawerItemModel;
   @override
   Widget build(BuildContext context) {
