@@ -11,13 +11,15 @@ class AllExpenses extends StatelessWidget {
     return Container(
       decoration: ShapeDecoration(
         color: Colors.white,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
       ),
       child: Column(
         children: [
           AllExpensesHeaders(),
           SizedBox(height: 16),
-          Expanded(child: AllExpensesItemListView()),
+          AllExpensesItemListView(),
         ],
       ),
     );
