@@ -14,13 +14,13 @@ class AllExpensesItemListView extends StatelessWidget {
       price: r'$20,129',
     ),
     AllExpenseItemModel(
-      image: Assets.imagesBalance,
+      image: Assets.imagesIncome,
       date: 'April, 2025',
       title: 'Balance',
       price: r'$20,129',
     ),
     AllExpenseItemModel(
-      image: Assets.imagesBalance,
+      image: Assets.imagesExpenses,
       date: 'April, 2025',
       title: 'Balance',
       price: r'$20,129',
@@ -38,12 +38,18 @@ class AllExpensesItemListView extends StatelessWidget {
               return Expanded(
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 12),
-                  child: AllExpensesItem(itemModel: item),
+                  child: AllExpensesItem(
+                    itemModel: item,
+                    isSelected: false,
+                  ),
                 ),
               );
             } else {
               return Expanded(
-                child: AllExpensesItem(itemModel: item),
+                child: AllExpensesItem(
+                  itemModel: item,
+                  isSelected: false,
+                ),
               );
             }
           }).toList(),
