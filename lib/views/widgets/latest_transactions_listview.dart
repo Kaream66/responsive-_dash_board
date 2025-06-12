@@ -22,16 +22,26 @@ class LatestTransactionsListview extends StatelessWidget {
       title: 'Lekan Okeowo',
       subTitle: 'demo@gmail.com',
     ),
+    UserInfoModel(
+      image: Assets.imagesAvatar2,
+      title: 'Lekan Okeowo',
+      subTitle: 'demo@gmail.com',
+    ),
   ];
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: items.length,
-      scrollDirection: Axis.horizontal,
-      itemBuilder: (context, index) {
-        return UserListTileInfo(userInfoModel: items[index]);
-      },
+    return SizedBox(
+      height: 75,
+      child: ListView.builder(
+        itemCount: items.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return IntrinsicWidth(
+            child: UserListTileInfo(userInfoModel: items[index]),
+          );
+        },
+      ),
     );
   }
 }

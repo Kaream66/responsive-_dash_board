@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dash_board/utils/app_images.dart';
+
 import 'package:responsive_dash_board/utils/app_styles.dart';
+import 'package:responsive_dash_board/views/widgets/latest_transactions_listview.dart';
 
 class LatestTransaction extends StatelessWidget {
   const LatestTransaction({super.key});
@@ -17,7 +17,7 @@ class LatestTransaction extends StatelessWidget {
         ),
         SizedBox(height: 24),
 
-        // ),
+        LatestTransactionsListview(),
       ],
     );
   }
