@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
+import 'package:responsive_dash_board/views/widgets/custom_button.dart';
 import 'package:responsive_dash_board/views/widgets/title_text_field.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
@@ -26,7 +27,7 @@ class QuickInvoiceForm extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 24),
+
         Row(
           children: [
             Expanded(
@@ -37,6 +38,20 @@ class QuickInvoiceForm extends StatelessWidget {
             ),
             SizedBox(width: 16),
             Expanded(child: MyDropdown()),
+          ],
+        ),
+        SizedBox(height: 24),
+        Row(
+          children: [
+            Expanded(
+              child: CustomButton(
+                text: 'More details',
+                textColor: Color(0xFF4EB7F2),
+                backgroundcolor: Colors.transparent,
+              ),
+            ),
+            SizedBox(width: 24),
+            Expanded(child: CustomButton(text: 'Send money')),
           ],
         ),
       ],

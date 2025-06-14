@@ -14,7 +14,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(width: 32),
         Expanded(
           flex: 2,
-          child: Column(
+          child: ListView(
             children: [
               AllExpenses(),
               SizedBox(height: 25),
