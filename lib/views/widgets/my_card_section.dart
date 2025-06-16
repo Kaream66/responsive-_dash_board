@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
+import 'package:responsive_dash_board/views/widgets/custom_background_container.dart';
 import 'package:responsive_dash_board/views/widgets/custom_dot_indicator.dart';
-import 'package:responsive_dash_board/views/widgets/my_card.dart';
 import 'package:responsive_dash_board/views/widgets/my_card_page_view.dart';
+import 'package:responsive_dash_board/views/widgets/transaction_history.dart';
 
 class MyCardSection extends StatefulWidget {
   const MyCardSection({super.key});
@@ -27,20 +28,23 @@ class _MyCardSectionState extends State<MyCardSection> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'My Card',
-          style: AppStyles.styleSemiBold20(
-            context,
-          ).copyWith(color: Colors.black),
-        ),
-        SizedBox(height: 20),
-        MyCardPageView(pageController: pageController),
-        SizedBox(height: 20),
-        CustomDotIndicator(currentPageIndex: currentPageIndex),
-      ],
+    return CustomBackgroundContainer(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'My Card',
+            style: AppStyles.styleSemiBold20(
+              context,
+            ).copyWith(color: Colors.black),
+          ),
+          SizedBox(height: 20),
+          MyCardPageView(pageController: pageController),
+          SizedBox(height: 20),
+          CustomDotIndicator(currentPageIndex: currentPageIndex),
+          TransactionHistory(),
+        ],
+      ),
     );
   }
 }
