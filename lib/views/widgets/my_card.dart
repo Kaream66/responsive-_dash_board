@@ -72,12 +72,3 @@ class MyCard extends StatelessWidget {
     );
   }
 }
-
-
-// Text(
-//           'My Card',
-//           style: AppStyles.styleSemiBold20(
-//             context,
-//           ).copyWith(color: Colors.black),
-//         ),
-//         SizedBox(height: 20),
