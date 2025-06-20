@@ -60,6 +60,8 @@ class QuickInvoiceForm extends StatelessWidget {
 }
 
 class MyDropdown extends StatefulWidget {
+  const MyDropdown({super.key});
+
   @override
   _MyDropdownState createState() => _MyDropdownState();
 }
