@@ -58,3 +58,64 @@ class _IncomeChartState extends State<IncomeChart> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+// class IncomeChart extends StatelessWidget {
+//   const IncomeChart({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return CustomPaint(
+//       size: Size(200, 200),
+//       painter: PieChartPainter(),
+//     );
+//   }
+// }
+
+// class PieChartPainter extends CustomPainter {
+//   @override
+//   void paint(Canvas canvas, Size size) {
+//     final paint = Paint()..style = PaintingStyle.fill;
+
+//     double startAngle = 0;
+//     double sweepAngle =
+//         90 * (3.14159 / 180); // 90 degrees in radians
+
+//     // الألوان لكل جزء
+//     List<Color> colors = [
+//       Colors.red,
+//       Colors.green,
+//       Colors.blue,
+//       Colors.yellow,
+//     ];
+
+//     for (int i = 0; i < 4; i++) {
+//       paint.color = colors[i];
+//       canvas.drawArc(
+//         Rect.fromCircle(
+//           center: Offset(size.width / 2, size.height / 2),
+//           radius: size.width / 2,
+//         ),
+//         startAngle,
+//         sweepAngle,
+//         true,
+//         paint,
+//       );
+//       startAngle += sweepAngle; // تحديث الزاوية للجزء التالي
+//     }
+//   }
+
+//   @override
+//   bool shouldRepaint(covariant CustomPainter oldDelegate) {
+//     return false;
+//   }
+// }

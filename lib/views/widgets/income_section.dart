@@ -12,11 +12,7 @@ class IncomeSection extends StatelessWidget {
       child: Column(
         children: [
           IncomeSectionHeader(),
-          Expanded(
-            child: Row(
-              children: [Expanded(child: IncomeChart())],
-            ),
-          ),
+          SizedBox(height: 200, child: IncomeChart()),
         ],
       ),
     );
