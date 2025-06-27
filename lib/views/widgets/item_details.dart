@@ -17,12 +17,15 @@ class ItemDetails extends StatelessWidget {
         ),
       ),
       title: Text(
+        maxLines: 1,
         itemDetailsModel.title,
         style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         itemDetailsModel.value,
-        style: AppStyles.styleMedium16(context),
+        style: AppStyles.styleMedium16(
+          context,
+        ).copyWith(color: Colors.blue),
       ),
     );
   }
