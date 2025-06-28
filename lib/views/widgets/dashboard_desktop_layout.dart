@@ -17,16 +17,7 @@ class DashboardDesktopLayout extends StatelessWidget {
           child: AllEspensesAndQuickInvoiceSection(),
         ),
         SizedBox(width: 24),
-        Expanded(
-          child: MyCradAndIncomeSection(),
-          // child: Column(
-          //   children: [
-          //     MycardAndTransactionHistorySection(),
-          //     SizedBox(height: 24),
-          //     Expanded(child: IncomeSection()),
-          //   ],
-          // ),
-        ),
+        Expanded(child: MyCradAndIncomeSection()),
       ],
     );
   }
