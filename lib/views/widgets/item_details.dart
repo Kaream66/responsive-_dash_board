@@ -17,7 +17,6 @@ class ItemDetails extends StatelessWidget {
         ),
       ),
       title: Text(
-        maxLines: 1,
         itemDetailsModel.title,
         style: AppStyles.styleRegular16(context),
       ),

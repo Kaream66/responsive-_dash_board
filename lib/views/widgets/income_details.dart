@@ -7,17 +7,17 @@ class IncomeDetails extends StatelessWidget {
   static List items = [
     ItemDetailsModel(
       color: Color(0xff208CC8),
-      title: 'service',
+      title: 'Design service',
       value: '40%',
     ),
     ItemDetailsModel(
       color: Color(0xff4EB7F2),
-      title: 'product',
+      title: 'Design product',
       value: '25%',
     ),
     ItemDetailsModel(
       color: Color(0xff064061),
-      title: 'royalti',
+      title: 'Product royalti',
       value: '20%',
     ),
     ItemDetailsModel(
@@ -28,13 +28,17 @@ class IncomeDetails extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      // physics: NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: items.length,
-      itemBuilder: (context, index) {
-        return ItemDetails(itemDetailsModel: items[index]);
-      },
+    return Column(
+      children: [
+        ...items.map((e) => ItemDetails(itemDetailsModel: e)),
+      ],
     );
+    // return ListView.builder(
+    //   shrinkWrap: true,
+    //   itemCount: items.length,
+    //   itemBuilder: (context, index) {
+    //     return ItemDetails(itemDetailsModel: items[index]);
+    //   },
+    // );
   }
 }
