@@ -30,20 +30,32 @@ class InActiveExpensesWidget extends StatelessWidget {
         children: [
           AllExpensesItemHeader(image: itemModel.image),
           SizedBox(height: 34),
-          Text(
-            itemModel.title,
-            style: AppStyles.styleMedium16(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+
+            child: Text(
+              itemModel.title,
+              style: AppStyles.styleMedium16(context),
+            ),
           ),
           SizedBox(height: 8),
-          Text(
-            itemModel.date,
-            style: AppStyles.styleRegular14(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+
+            child: Text(
+              itemModel.date,
+              style: AppStyles.styleRegular14(context),
+            ),
           ),
           SizedBox(height: 16),
 
-          Text(
-            itemModel.price,
-            style: AppStyles.styleSemiBold24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+
+            child: Text(
+              itemModel.price,
+              style: AppStyles.styleSemiBold24(context),
+            ),
           ),
         ],
       ),
@@ -82,26 +94,37 @@ class ActiveExpensesWidget extends StatelessWidget {
             iconColor: Colors.white,
           ),
           SizedBox(height: 34),
-          Text(
-            itemModel.title,
-            style: AppStyles.styleMedium16(
-              context,
-            ).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              itemModel.title,
+              style: AppStyles.styleMedium16(
+                context,
+              ).copyWith(color: Colors.white),
+            ),
           ),
           SizedBox(height: 8),
-          Text(
-            itemModel.date,
-            style: AppStyles.styleRegular14(
-              context,
-            ).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+
+            child: Text(
+              itemModel.date,
+              style: AppStyles.styleRegular14(
+                context,
+              ).copyWith(color: Colors.white),
+            ),
           ),
           SizedBox(height: 16),
 
-          Text(
-            itemModel.price,
-            style: AppStyles.styleSemiBold24(
-              context,
-            ).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+
+            child: Text(
+              itemModel.price,
+              style: AppStyles.styleSemiBold24(
+                context,
+              ).copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),

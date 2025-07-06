@@ -41,36 +41,23 @@ class _AllExpensesItemListViewState
           items.asMap().entries.map((e) {
             int index = e.key;
             var item = e.value;
-            if (index == 1) {
-              return Expanded(
-                child: GestureDetector(
-                  onTap: () {
-                    updatedIndex(index);
-                  },
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 12,
-                    ),
-                    child: AllExpensesItem(
-                      itemModel: item,
-                      isSelected: selectedIndex == index,
-                    ),
+
+            return Expanded(
+              child: GestureDetector(
+                onTap: () {
+                  updatedIndex(index);
+                },
+                child: Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: index == 1 ? 12 : 0,
                   ),
-                ),
-              );
-            } else {
-              return Expanded(
-                child: GestureDetector(
-                  onTap: () {
-                    updatedIndex(index);
-                  },
                   child: AllExpensesItem(
                     itemModel: item,
                     isSelected: selectedIndex == index,
                   ),
                 ),
-              );
-            }
+              ),
+            );
           }).toList(),
     );
   }
